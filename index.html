@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>img{max-width:100%}body{margin:0}</style>
+<title>Ozge Pelin Kuyumcu</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap">
+<style>
+/* Layout: a set of drawing sheets. Each project is a sheet with a title block (meta) beside its plates (images). */
+:root{
+  --bg:#eceeed; --surface:#f7f8f7; --paper:#ffffff; --ink:#16191a; --muted:#5d6564; --line:#c9cfcd;
+  --accent:#2c6b66; --accent-soft:#d6e5e2;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --maxw:1240px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111413; --surface:#181c1b; --paper:#f2f3f2; --ink:#e7ebea; --muted:#9aa4a2; --line:#2c3331;
+  --accent:#7fbfb7; --accent-soft:#1f3532; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111413; --surface:#181c1b; --paper:#f2f3f2; --ink:#e7ebea; --muted:#9aa4a2; --line:#2c3331;
+  --accent:#7fbfb7; --accent-soft:#1f3532; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media(min-width:760px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.mark{font-family:var(--f-display);font-weight:700;font-stretch:115%;letter-spacing:.04em;text-transform:uppercase;font-size:14px;text-decoration:none}
+.mark span{color:var(--muted);font-weight:400}
+nav.links{display:flex;gap:22px}
+nav.links a{text-decoration:none;color:var(--muted)}
+nav.links a:hover{color:var(--ink)}
+@media(max-width:560px){nav.links{gap:14px}nav.links a.hide-sm{display:none}}
+
+/* hero */
+.hero{padding-block:56px 40px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:end}
+@media(min-width:900px){.hero-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px}}
+.eyebrow{color:var(--accent);margin-bottom:18px;display:block}
+h1{font-family:var(--f-display);font-weight:800;font-stretch:118%;text-transform:uppercase;line-height:.92;letter-spacing:-.01em;font-size:clamp(44px,8vw,96px);margin:0 0 22px;text-wrap:balance}
+h1 .thin{display:block;font-weight:300;font-stretch:100%;color:var(--muted)}
+.lede{max-width:46ch;font-size:18px;font-weight:300;color:var(--ink);margin:0 0 28px}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;border-top:1px solid var(--line);padding-top:18px;margin:0}
+.facts dt{color:var(--muted);padding-top:2px}
+.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.hero-figure{margin:0;position:relative}
+.hero-figure img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:2px;cursor:zoom-in}
+.hero-figure figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:10px;color:var(--muted)}
+
+/* index */
+.index{border-top:1px solid var(--ink);margin-top:24px}
+.index-head{display:flex;justify-content:space-between;align-items:baseline;padding-block:18px 8px}
+.index ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr)}
+@media(min-width:760px){.index ol{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px}}
+.index li a{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:color .2s,padding .2s}
+.index li a:hover{color:var(--accent);padding-left:6px}
+.index .n{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.index .t{font-family:var(--f-display);font-weight:600;font-size:18px;font-stretch:105%}
+.index .c{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+
+/* projects */
+.project{padding-block:72px 24px;scroll-margin-top:70px}
+.p-head{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;padding-bottom:28px;border-bottom:1px solid var(--line);margin-bottom:28px}
+@media(min-width:900px){.p-head{grid-template-columns:120px minmax(0,1fr)}}
+.p-num{font-family:var(--f-display);font-weight:200;font-stretch:125%;font-size:clamp(48px,6vw,80px);line-height:.85;color:var(--accent)}
+.p-head h2{font-family:var(--f-display);font-weight:700;font-stretch:112%;text-transform:uppercase;font-size:clamp(26px,3.6vw,44px);line-height:1;margin:0 0 10px;letter-spacing:-.005em;text-wrap:balance}
+.p-head .sub{color:var(--muted);margin:0}
+.p-body{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media(min-width:900px){.p-body{grid-template-columns:300px minmax(0,1fr);gap:48px}}
+
+/* title block, modeled on a drawing sheet title block */
+.tblock{align-self:start;border:1px solid var(--ink);background:var(--surface);font-size:14px}
+@media(min-width:900px){.tblock{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px)}}
+.tblock .row{padding:12px 14px;border-bottom:1px solid var(--line)}
+.tblock .row:last-child{border-bottom:0}
+.tblock .k{display:block;color:var(--muted);font-family:var(--f-mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:3px}
+.tblock .v{display:block;line-height:1.45}
+.tblock .split{display:grid;grid-template-columns:1fr 1fr}
+.tblock .split>div{padding:12px 14px}
+.tblock .split>div+div{border-left:1px solid var(--line)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.tag{font-family:var(--f-mono);font-size:11px;padding:3px 7px;border:1px solid var(--line);background:var(--bg);white-space:nowrap}
+.sheet-no{display:flex;justify-content:space-between;align-items:center;background:var(--ink);color:var(--bg);padding:10px 14px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em}
+
+/* plates */
+.plates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-content:start}
+@media(min-width:620px){.plates{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.plate{margin:0;min-width:0;grid-column:span 1}
+@media(max-width:619px){.plate.mfull{grid-column:1/-1}}
+@media(min-width:620px){.plate{grid-column:span 2}.plate.w3{grid-column:span 3}.plate.w4{grid-column:span 4}.plate.w6{grid-column:span 6}}
+.plate.full-sm{grid-column:1/-1}
+@media(min-width:620px){.plate.full-sm{grid-column:span 3}.plate.full-sm.w4{grid-column:span 4}.plate.full-sm.w6{grid-column:span 6}}
+.plate button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;color:inherit;text-align:left}
+.frame{display:block;overflow:hidden;background:var(--surface);border:1px solid var(--line);aspect-ratio:4/3}
+.frame.tall{aspect-ratio:3/4}
+.frame.wide{aspect-ratio:16/9}
+.frame.sq{aspect-ratio:1/1}
+.frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.frame.dwg{background:var(--paper)}
+.frame.dwg img{object-fit:contain;padding:10px}
+.plate button:hover img{transform:scale(1.03)}
+.plate figcaption{display:flex;gap:8px;padding-top:8px;font-size:13px;color:var(--muted);line-height:1.4}
+.plate figcaption b{font-family:var(--f-mono);font-weight:500;font-size:11px;color:var(--ink);letter-spacing:.04em;padding-top:1px}
+
+/* skills */
+.band{background:var(--surface);border-block:1px solid var(--line);margin-top:72px}
+.band .wrap{padding-block:64px}
+.skills{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media(min-width:900px){.skills{grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px}}
+h3{font-family:var(--f-display);font-weight:700;font-stretch:112%;text-transform:uppercase;font-size:28px;line-height:1.05;margin:0 0 12px}
+.soft{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--ink)}
+@media(min-width:620px){.soft{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.soft div{padding:16px 0 16px;border-bottom:1px solid var(--line)}
+.soft .name{font-family:var(--f-display);font-weight:600;font-size:19px;font-stretch:105%;display:block}
+.soft .use{font-size:13px;color:var(--muted)}
+
+/* contact */
+.contact{padding-block:88px 64px}
+.contact h2{font-family:var(--f-display);font-weight:800;font-stretch:118%;text-transform:uppercase;font-size:clamp(36px,6vw,72px);line-height:.95;margin:0 0 32px;text-wrap:balance}
+.contact h2 span{color:var(--accent)}
+.c-rows{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--ink)}
+@media(min-width:760px){.c-rows{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.c-rows>div{padding:18px 0;border-bottom:1px solid var(--line);min-width:0}
+@media(min-width:760px){.c-rows>div+div{padding-left:24px;border-left:1px solid var(--line)}}
+.c-val{font-size:18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:6px;overflow-wrap:anywhere;user-select:all}
+.copy{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:4px 8px;cursor:pointer;user-select:none}
+.copy:hover{border-color:var(--accent);color:var(--accent)}
+footer{border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-block:22px;color:var(--muted)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(10,12,12,.94);display:grid;grid-template-rows:auto 1fr auto;padding:calc(env(safe-area-inset-top,0px) + 12px) max(16px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 16px) max(16px,env(safe-area-inset-left,0px));color:#e9eceb}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lb-stage{display:flex;align-items:center;justify-content:center;min-height:0;padding-block:12px}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;background:#fff}
+.lb-stage img.photo{background:transparent}
+.lb-bot{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lb button{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;background:transparent;color:#e9eceb;border:1px solid rgba(255,255,255,.3);padding:8px 12px;cursor:pointer}
+.lb button:hover{border-color:#fff}
+.lb .cap{font-size:14px;color:#c3cac8;text-align:center;flex:1;min-width:0}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top">O.P. Kuyumcu <span>/ Portfolio</span></a>
+    <nav class="links mono" aria-label="Sections">
+      <a href="#works">Works</a>
+      <a href="#software" class="hide-sm">Software</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow mono">Architectural Designer &amp; BIM Specialist</span>
+        <h1>Ozge Pelin<span class="thin">Kuyumcu</span></h1>
+        <p class="lede">Construction documents, exterior and millwork detailing, and 3D visualization for commercial and residential work, from the first massing study to the installed counter.</p>
+        <dl class="facts mono">
+          <dt>Based in</dt><dd>Charlotte, NC</dd>
+          <dt>Practice</dt><dd>Commercial · Residential · Interiors</dd>
+          <dt>Tools</dt><dd>Revit · AutoCAD · SketchUp · Lumion</dd>
+        </dl>
+      </div>
+      <figure class="hero-figure">
+        <img src="img/hero-villa.jpg" alt="Rendered modern villa with a cantilevered roof over a lit swimming pool at dusk" data-lb="hero" width="701" height="394">
+        <figcaption class="mono"><span>Modern villa · exterior render</span><span>Lumion</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="index" id="works">
+      <div class="index-head"><span class="mono">Selected works</span><span class="mono" style="color:var(--muted)">08 projects</span></div>
+      <ol id="index-list"></ol>
+    </div>
+  </section>
+
+  <div id="projects"></div>
+
+  <section class="band" id="software">
+    <div class="wrap skills">
+      <div>
+        <h3>Software</h3>
+        <p style="color:var(--muted);margin:0;max-width:40ch">The tools behind the drawings, models and renderings in this portfolio.</p>
+      </div>
+      <div class="soft">
+        <div><span class="name">Revit</span><span class="use">BIM modeling, CDs</span></div>
+        <div><span class="name">AutoCAD</span><span class="use">Drafting, details</span></div>
+        <div><span class="name">SketchUp</span><span class="use">3D concepts</span></div>
+        <div><span class="name">Vectorworks</span><span class="use">Shop drawings</span></div>
+        <div><span class="name">Lumion</span><span class="use">Rendering</span></div>
+        <div><span class="name">Cabinet Vision</span><span class="use">Millwork</span></div>
+        <div><span class="name">Excel</span><span class="use">Schedules</span></div>
+        <div><span class="name">MS Office</span><span class="use">Documentation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact wrap" id="contact">
+    <span class="eyebrow mono">Contact</span>
+    <h2>Available for drafting, detailing <span>&amp; visualization.</span></h2>
+    <div class="c-rows">
+      <div><span class="mono" style="color:var(--muted)">Email</span>
+        <div class="c-val"><span id="email">ozgepelinkuyumcuu@gmail.com</span><button class="copy" data-copy="email" type="button">Copy</button></div></div>
+      <div><span class="mono" style="color:var(--muted)">Phone</span>
+        <div class="c-val"><span id="phone">+1 843-999-4648</span><button class="copy" data-copy="phone" type="button">Copy</button></div></div>
+      <div><span class="mono" style="color:var(--muted)">Location</span>
+        <div class="c-val"><span>Charlotte, North Carolina</span></div></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap mono"><span>© 2026 Ozge Pelin Kuyumcu</span><span>Portfolio · October 2026</span></div></footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lb-top"><span class="mono" id="lb-count"></span><button type="button" id="lb-close">Close ✕</button></div>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <div class="lb-bot"><button type="button" id="lb-prev">← Prev</button><span class="cap" id="lb-cap"></span><button type="button" id="lb-next">Next →</button></div>
+</div>
+
+<script>
+const P=[
+ {id:"construction-documents",n:"01",cat:"Commercial",title:"Construction Documents & Life Safety",sub:"Floor plans and fire-protection sheets for an office workplace, drawn during the construction documentation phase.",
+  meta:[["Project","Commercial Workplace Facility (Confidential Client)"],["Phase / Status","In progress · Construction Documentation (CD)"],["Location","Charlotte, NC"],["Role","Freelance Technical Drafting"]],
+  sw:["Revit","AutoCAD"],
+  img:[["cd-floor-plan","Floor plan with fire protection layout","w4 full-sm","dwg sq"],["cd-plan-level","Level plan, core and egress","mfull","dwg tall"]]},
+ {id:"exterior-details",n:"02",cat:"Commercial",title:"Architectural & Exterior Details",sub:"Exterior envelope and construction details, from roof assemblies down to foundations.",
+  meta:[["Project","Commercial Facility · Exterior Envelope & Construction Details"],["Location","Greenville, SC"],["Role","Architectural Drafting & Technical Detailing"],["Scope","Exterior building elevations, full-height wall sections, roof-to-foundation assemblies and isometric structural construction details."]],
+  sw:["Revit","AutoCAD"],
+  img:[["det-elevations","Exterior building elevations","w4 full-sm","dwg"],["det-wall-section","Full-height wall section","","dwg tall"],["det-stair-section","Typical stair section","","dwg tall"],["det-panel-wall","FC panel siding wall with column","","dwg tall"],["det-column-plan","Column plan detail","","dwg tall"],["det-underlayment","Isometric: subfloor underlayment system","w3 full-sm","dwg"],["det-column-header","Column header at clubhouse","w3 full-sm","dwg"],["det-conduit","Typical conduit stub-up detail","w3 full-sm","dwg wide"],["det-balcony","Balcony detail key reference","w3 full-sm","dwg wide"]]},
+ {id:"millwork-submittals",n:"03",cat:"Commercial",title:"Architectural Millwork & Submittals",sub:"Shop drawings, 3D drawings and submittal packages for custom joinery.",
+  meta:[["Location","Greenville, SC / Charlotte, NC"],["Role","Submittal Engineering & Millwork Detailing"],["Scope","Coordinated architectural shop drawings, wall cladding sections, custom banquette seating and solid-surface island counters from submittal stage to field installation."]],
+  sw:["AutoCAD","SketchUp","Vectorworks"],
+  img:[["mw-3d-ceiling","3D millwork views and reflected ceiling plans","w6 full-sm","dwg wide"],["mw-elevations","Town hall plan, elevations and renders","w3 full-sm","dwg"],["mw-sections","Millwork elevations and sections","w3 full-sm","dwg"]]},
+ {id:"field-installation",n:"04",cat:"Built work",title:"Millwork Field Installation",sub:"The submittal work above, built and installed on site.",
+  meta:[["Project","Commercial interiors · installed millwork"],["Location","Greenville, SC / Charlotte, NC"],["Includes","Curved banquette with slatted base, solid-surface island counter on fluted pedestal, reception counter, pantry casework"]],
+  sw:["Shop drawings","Site coordination"],
+  img:[["fi-banquette","Curved upholstered banquette with slatted wood base","w4 full-sm","wide"],["fi-island","Solid-surface island on fluted pedestal","mfull","tall"],["fi-reception","Reception counter with teal panel front","w3 full-sm",""],["fi-pantry","Pantry casework and tile backsplash","w3 full-sm",""]]},
+ {id:"residential-3d",n:"05",cat:"Residential",title:"Residential Architecture & 3D Concepts",sub:"Custom villa concepts, spatial modeling, and exterior and interior rendering.",
+  meta:[["Typology","Luxury single-family residential & private villas"],["Role","Architectural Concept Designer & 3D Visualizer"],["Scope","3D massing, façade articulation, exterior material development and atmospheric lighting studies across multiple regional design typologies."]],
+  sw:["Revit","SketchUp","Lumion"],
+  img:[["res-scorpion","Scorpion Villa","mfull","sq"],["res-modern","Modern Villa","","sq"],["res-greek","Greek Villa","","sq"]]},
+ {id:"interiors",n:"06",cat:"Interiors",title:"Interior Architecture & Visualization",sub:"Residential and commercial interiors: bespoke living spaces, materiality and 3D spatial concepts.",
+  meta:[["Location","Turkey / USA"],["Role","Lead Interior Designer & 3D Visualizer"],["Scope","Complete concept design, spatial layout, custom ceiling millwork, furniture selection and photorealistic interior rendering."]],
+  sw:["SketchUp","Lumion"],
+  img:[["int-living","Living, bedroom and bath interiors","w3 full-sm","sq"],["int-lounge","Hospitality lounge concept","w3 full-sm","sq"]]},
+ {id:"pool-addition",n:"07",cat:"Residential",title:"Residential Outdoor Living & Pool Addition",sub:"Exterior restoration, swimming pool integration and hardscape design.",
+  meta:[["Location","Myrtle Beach, SC"],["Typology","Single-family residential addition"],["Role","Architectural Designer & 3D BIM Modeler"],["Scope","Modeled existing home conditions, designed a new swimming pool and spa addition, integrated outdoor patio transitions and developed exterior material finishes."]],
+  sw:["Revit","Lumion"],
+  img:[["pool-terrace","Pool terrace at dusk","w6 full-sm","wide"],["pool-aerial","Aerial view of pool and spa","","wide"],["pool-garden","Pool from the garden","","wide"],["pool-spa","Raised spa detail","mfull","wide"]]},
+ {id:"academic",n:"08",cat:"Academic",title:"Academic Works & Architectural Foundations",sub:"Student projects, including the Experimental Art Center: site studies, physical models and hand drawing.",
+  meta:[["Projects","Experimental Art Center and studio work"],["Context","Undergraduate architecture studios, 1st–4th year"],["Work","Site analysis, massing models, plans, sections and hand-drafted presentation sheets"]],
+  sw:["Hand drawing","Physical models","3D"],
+  img:[["acad-art-center","Experimental Art Center, 4th year","mfull","tall"],["acad-site","Site plan and landscape model","","tall"],["acad-sheets","Plans and sections, presentation sheet","","tall"],["acad-sketches","1st year spring semester, hand drawings","w6 full-sm","wide"]]}
+];
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const gallery=[{src:"img/hero-villa.jpg",cap:"Modern villa · exterior render",dwg:false}];
+document.getElementById("index-list").innerHTML=P.map(p=>`<li><a href="#${p.id}"><span class="n">${p.n}</span><span class="t">${esc(p.title)}</span><span class="c">${p.cat}</span></a></li>`).join("");
+document.getElementById("projects").innerHTML=P.map(p=>{
+  const rows=p.meta.map(([k,v])=>`<div class="row"><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>`).join("");
+  const plates=p.img.map(([f,cap,w,fr],i)=>{
+    const idx=gallery.push({src:`img/${f}.jpg`,cap:`${p.n}.${i+1} · ${cap}`,dwg:fr.includes("dwg")})-1;
+    return `<figure class="plate ${w}"><button type="button" data-lb="${idx}" aria-label="Enlarge: ${esc(cap)}"><span class="frame ${fr}"><img src="img/${f}.jpg" alt="${esc(cap)}" loading="lazy"></span></button><figcaption><b>${p.n}.${i+1}</b><span>${esc(cap)}</span></figcaption></figure>`}).join("");
+  return `<section class="project wrap" id="${p.id}">
+    <div class="p-head"><div class="p-num">${p.n}</div><div><span class="mono" style="color:var(--muted)">${p.cat}</span><h2>${esc(p.title)}</h2><p class="sub">${esc(p.sub)}</p></div></div>
+    <div class="p-body">
+      <aside class="tblock" aria-label="Project details">${rows}
+        <div class="row"><span class="k">Software / Method</span><span class="tags">${p.sw.map(s=>`<span class="tag">${esc(s)}</span>`).join("")}</span></div>
+        <div class="sheet-no"><span>SHEET</span><span>A-${p.n.padStart(3,"0")} / A-008</span></div>
+      </aside>
+      <div class="plates">${plates}</div>
+    </div></section>`}).join("");
+
+/* lightbox */
+const lb=document.getElementById("lb"),li=document.getElementById("lb-img"),lc=document.getElementById("lb-cap"),ln=document.getElementById("lb-count");
+let cur=0,last=null;
+function show(i){cur=(i+gallery.length)%gallery.length;const g=gallery[cur];li.src=g.src;li.alt=g.cap;li.className=g.dwg?"":"photo";lc.textContent=g.cap;ln.textContent=String(cur+1).padStart(2,"0")+" / "+gallery.length}
+function open(i){last=document.activeElement;show(i);lb.hidden=false;document.body.style.overflow="hidden";document.getElementById("lb-close").focus()}
+function close(){lb.hidden=true;document.body.style.overflow="";if(last)last.focus()}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-lb]");if(t){open(t.dataset.lb==="hero"?0:+t.dataset.lb)}});
+document.getElementById("lb-close").onclick=close;
+document.getElementById("lb-prev").onclick=()=>show(cur-1);
+document.getElementById("lb-next").onclick=()=>show(cur+1);
+lb.addEventListener("click",e=>{if(e.target===lb||e.target.classList.contains("lb-stage"))close()});
+document.addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key==="Escape")close();if(e.key==="ArrowRight")show(cur+1);if(e.key==="ArrowLeft")show(cur-1)});
+
+/* copy */
+document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
+  const el=document.getElementById(b.dataset.copy),txt=el.textContent;
+  const done=()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy",1600)};
+  const sel=()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selected"};
+  try{navigator.clipboard.writeText(txt).then(done,sel)}catch(e){sel()}
+}));
+</script>
+</body>
+</html>
